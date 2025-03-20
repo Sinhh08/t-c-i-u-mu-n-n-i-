@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tớ có điều muốn nói!! 🥹🥹</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tớ là Sinh, cậu có thích tớ không? 🥺</h2>
+
+    <button onclick="yeu()">Có</button>
+    <button onclick="buon()">Không</button>
+
+    <div id="ketqua"></div>
+
+    <script>
+        function yeu() {
+            document.getElementById("ketqua").innerHTML = "<h3>Vậy làm người yêu tớ nhé! ❤️</h3>";
+        }
+
+        function buon() {
+            document.getElementById("ketqua").innerHTML = `
+                <h3>Buồn nhỉ, nhưng tớ thích cậu 😢</h3>
+                <button onclick="thich()">Vậy tớ thích cậu.</button>
+                <button onclick="khongThich()">Tớ không thích cậu.</button>
+            `;
+        }
+
+        function thich() {
+            document.getElementById("ketqua").innerHTML = "<h3>Vậy làm người yêu tớ nhé! 🥰🥰</h3>";
+        }
+
+        function khongThich() {
+            document.getElementById("ketqua").innerHTML = "<h3>😢😢</h3>";
+        }
+    </script>
+
+</body>
+</html>
